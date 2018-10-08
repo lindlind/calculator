@@ -9,7 +9,7 @@
     tools:showIn="@layout/activity_main">
 
     <TextView
-        android:paddingTop="20dp"
+        android:paddingTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintRight_toRightOf="parent"
@@ -18,7 +18,6 @@
         android:text="Hello World!"/>
 
     <TextView
-        android:paddingBottom="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/grid_vertical"
@@ -37,7 +36,7 @@
 
         <Button
             android:text="Clear"
-            android:id="@+id/b_clear"
+            android:id="@+id/clear"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
