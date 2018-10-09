@@ -31,7 +31,7 @@
         app:layout_constraintRight_toRightOf="parent"
         android:textColor="#000000"
         android:textSize="30dp"
-        android:text="!!"/>
+        android:text=""/>
 
     <GridLayout
         android:id="@+id/grid_vertical"
@@ -56,8 +56,8 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
         <Button
-            android:text="ln"
-            android:id="@+id/b_ln"
+            android:text="|x|"
+            android:id="@+id/b_abs"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
