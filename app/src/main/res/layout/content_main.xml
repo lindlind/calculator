@@ -9,23 +9,29 @@
     tools:showIn="@layout/activity_main">
 
     <TextView
+        android:id="@+id/text_eval"
         android:paddingTop="20dp"
-        android:layout_width="wrap_content"
+        android:paddingRight="30px"
+        android:layout_width="1000dp"
         android:layout_height="wrap_content"
         app:layout_constraintRight_toRightOf="parent"
         android:textColor="#000000"
         android:textSize="35dp"
-        android:text="Hello World!"/>
+        android:gravity="right"
+        android:maxLines="1"
+        android:text=""/>
 
     <TextView
+        android:id="@+id/text_ans"
         android:paddingBottom="20dp"
+        android:paddingRight="20px"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/grid_vertical"
         app:layout_constraintRight_toRightOf="parent"
         android:textColor="#000000"
         android:textSize="30dp"
-        android:text="Hello World!"/>
+        android:text="!!"/>
 
     <GridLayout
         android:id="@+id/grid_vertical"
@@ -36,32 +42,36 @@
         android:columnCount="5">
 
         <Button
-            android:text="Clear"
-            android:id="@+id/b_clear"
-            android:layout_width="1dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"/>
-        <Button
             android:text="^"
+            android:id="@+id/b_pow"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
         <Button
             android:text="sqrt"
+            android:id="@+id/b_sqrt"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
         <Button
             android:text="ln"
+            android:id="@+id/b_ln"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
         <Button
-            android:text="<-"
+            android:text="&lt;-"
+            android:id="@+id/b_backspace"
+            android:layout_width="1dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+        <Button
+            android:text="Clear"
+            android:id="@+id/b_clear"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
@@ -69,30 +79,35 @@
 
         <Button
             android:text="7"
+            android:id="@+id/b_7"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
         <Button
             android:text="8"
+            android:id="@+id/b_8"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
         <Button
             android:text="9"
+            android:id="@+id/b_9"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
         <Button
             android:text="("
+            android:id="@+id/b_leftBracket"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
         <Button
             android:text=")"
+            android:id="@+id/b_rightBracket"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
@@ -100,30 +115,35 @@
 
         <Button
             android:text="4"
+            android:id="@+id/b_4"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
         <Button
             android:text="5"
+            android:id="@+id/b_5"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
         <Button
             android:text="6"
+            android:id="@+id/b_6"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
         <Button
             android:text="*"
+            android:id="@+id/b_multiply"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
         <Button
             android:text="/"
+            android:id="@+id/b_divide"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
@@ -131,30 +151,35 @@
 
         <Button
             android:text="1"
+            android:id="@+id/b_1"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
         <Button
             android:text="2"
+            android:id="@+id/b_2"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
         <Button
             android:text="3"
+            android:id="@+id/b_3"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
         <Button
             android:text="+"
+            android:id="@+id/b_plus"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
         <Button
             android:text="-"
+            android:id="@+id/b_minus"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
@@ -162,24 +187,28 @@
 
         <Button
             android:text="+/-"
+            android:id="@+id/b_sign"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
         <Button
             android:text="0"
+            android:id="@+id/b_0"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
         <Button
-            android:text=","
+            android:text="."
+            android:id="@+id/b_dot"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
         <Button
             android:text="="
+            android:id="@+id/b_equal"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
