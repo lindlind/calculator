@@ -10,27 +10,27 @@
 
     <TextView
         android:id="@+id/text_eval"
-        android:paddingTop="20dp"
+        android:paddingTop="10dp"
         android:paddingRight="30px"
         android:layout_width="1000dp"
         android:layout_height="wrap_content"
         app:layout_constraintRight_toRightOf="parent"
         android:textColor="#000000"
-        android:textSize="35dp"
+        android:textSize="30dp"
         android:gravity="right"
         android:maxLines="1"
         android:text=""/>
 
     <TextView
         android:id="@+id/text_ans"
-        android:paddingBottom="20dp"
+        android:paddingBottom="5dp"
         android:paddingRight="20px"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/grid_vertical"
         app:layout_constraintRight_toRightOf="parent"
         android:textColor="#000000"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:text=""/>
 
     <GridLayout
@@ -39,8 +39,22 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         android:gravity="bottom"
-        android:columnCount="5">
+        android:columnCount="7">
 
+        <Button
+            android:text="sin"
+            android:id="@+id/b_sin"
+            android:layout_width="1dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+        <Button
+            android:text="arcsin"
+            android:id="@+id/b_arcsin"
+            android:layout_width="1dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
         <Button
             android:text="^"
             android:id="@+id/b_pow"
@@ -56,8 +70,8 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
         <Button
-            android:text="|x|"
-            android:id="@+id/b_abs"
+            android:text="ln"
+            android:id="@+id/b_ln"
             android:layout_width="1dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
@@ -77,6 +91,20 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
 
+        <Button
+            android:text="cos"
+            android:id="@+id/b_cos"
+            android:layout_width="1dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+        <Button
+            android:text="arccos"
+            android:id="@+id/b_arccos"
+            android:layout_width="1dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
         <Button
             android:text="7"
             android:id="@+id/b_7"
@@ -114,6 +142,20 @@
             android:layout_gravity="fill"/>
 
         <Button
+            android:text="tan"
+            android:id="@+id/b_tan"
+            android:layout_width="1dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+        <Button
+            android:text="arctan"
+            android:id="@+id/b_arctan"
+            android:layout_width="1dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+        <Button
             android:text="4"
             android:id="@+id/b_4"
             android:layout_width="1dp"
@@ -150,6 +192,20 @@
             android:layout_gravity="fill"/>
 
         <Button
+            android:text="x!"
+            android:id="@+id/b_factorial"
+            android:layout_width="1dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+        <Button
+            android:text="|x|"
+            android:id="@+id/b_abs"
+            android:layout_width="1dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+        <Button
             android:text="1"
             android:id="@+id/b_1"
             android:layout_width="1dp"
@@ -185,6 +241,20 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"/>
 
+        <Button
+            android:text="pi"
+            android:id="@+id/b_pi"
+            android:layout_width="1dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
+        <Button
+            android:text="e"
+            android:id="@+id/b_e"
+            android:layout_width="1dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"/>
         <Button
             android:text="+/-"
             android:id="@+id/b_sign"
